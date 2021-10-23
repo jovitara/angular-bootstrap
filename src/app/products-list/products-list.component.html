@@ -1,0 +1,15 @@
+<!-- Parent/Tevinis komponentas -->
+<div class="row mb-3">
+  <div class="col-12">
+    <h1>Produktai</h1>
+
+  </div>
+  <div class="col-sm-3" *ngFor='let item of products'>
+    <!-- Child/Vaikinis komponentas -->
+    <!-- [product] - nurodo product-card komponento @Input kintamjo pavadinima -->
+    <!-- item - kintamasis kuri perduodame i child komponenta(app-product-card) -->
+    <app-product-card [product]="item"></app-product-card>
+
+    <!-- Toliau sukursime nauja <app-product-card> komponenta, vieno produkto korteles atvaizdavimui -->
+  </div>
+</div>
