@@ -9,11 +9,13 @@ export class ProductCardComponent implements OnInit {
   // Kintamojo aprasymas, kurio duomenys bus paduodami is parent komponento
   @Input() product : any ;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
     // Atspausdiname kintamojo reiksme i konsole
-    console.log(this.product);
+    console.log(this.product );
   }
 
 }

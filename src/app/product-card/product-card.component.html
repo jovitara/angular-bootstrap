@@ -9,7 +9,10 @@
     </p>
 
     <!-- TODO: Sukurti atkira route'a produkto puslapiui -->
-    <a href="#!" class="btn btn-primary">
+
+    <!-- Router Link Perduodant parametra -->
+    <a [routerLink]="['/products', product.id]"
+    class="btn btn-primary">
       Peržiūrėti  <i class="ms-1 fas fa-eye"></i>
     </a>
   </div>
